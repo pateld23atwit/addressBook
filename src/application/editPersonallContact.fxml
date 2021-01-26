@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="777.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="518.0" />
+      <Text fill="WHITE" layoutX="156.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Contact" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="159.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently Editing:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="editPersonalResults" layoutX="49.0" layoutY="636.0" onMouseMoved="#setLabel" prefHeight="127.0" prefWidth="418.0" promptText="Hover Mouse Over" />
+      <Button layoutX="219.0" layoutY="546.0" mnemonicParsing="false" onAction="#findEditPersonalContact" prefHeight="25.0" prefWidth="80.0" text="Confirm" textFill="RED" />
+      <VBox alignment="CENTER" layoutX="135.0" layoutY="79.0" prefHeight="447.0" prefWidth="196.0" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter First Name:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="editfName1" prefHeight="38.0" prefWidth="174.0" promptText="First Name" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Last Name:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="editlName1" prefHeight="38.0" prefWidth="174.0" promptText="Last Name" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Phone Number:" textAlignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="editPhone1" prefHeight="38.0" prefWidth="174.0" promptText="Phone #" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Email:" textAlignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="editemail1" prefHeight="38.0" prefWidth="174.0" promptText="Email" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Address:" textAlignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="editaddress1" prefHeight="38.0" prefWidth="174.0" promptText="Address" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

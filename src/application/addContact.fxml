@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="723.0" maxWidth="1280.0" minHeight="720.0" minWidth="716.0" prefHeight="720.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="89.0" layoutX="-4.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="728.0" />
+      <GridPane alignment="CENTER" hgap="10.0" layoutX="42.0" layoutY="163.0" maxHeight="642.0" maxWidth="1280.0" minHeight="78.0" minWidth="617.0" prefHeight="78.0" prefWidth="664.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="322.0" minWidth="10.0" prefWidth="273.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="382.0" minWidth="10.0" prefWidth="26.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="382.0" minWidth="10.0" prefWidth="345.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Contact" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Work Contact" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <GridPane alignment="CENTER" layoutX="4.0" layoutY="3.0" prefHeight="66.0" prefWidth="708.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Contact" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="47.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <VBox layoutX="43.0" layoutY="241.0" prefHeight="435.0" prefWidth="275.0" spacing="15.0">
+         <children>
+            <TextField fx:id="fName1" alignment="CENTER" promptText="First Name" />
+            <TextField fx:id="lName1" alignment="CENTER" promptText="Last Name" />
+            <TextField fx:id="phone1" alignment="CENTER" promptText="Phone Number" />
+            <TextField fx:id="email1" alignment="CENTER" promptText="Email" />
+            <TextField fx:id="address1" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Address" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addPersonal" prefHeight="89.0" prefWidth="269.0" text="Add" textAlignment="CENTER" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="395.0" layoutY="241.0" prefHeight="435.0" prefWidth="275.0" spacing="15.0">
+         <children>
+            <TextField fx:id="clientfName1" alignment="CENTER" promptText="First Name" />
+            <TextField fx:id="clientlName1" alignment="CENTER" promptText="Last Name" />
+            <TextField fx:id="clientPhone1" alignment="CENTER" promptText="Phone Number" />
+            <TextField fx:id="clientEmail1" alignment="CENTER" promptText="Client Email" />
+            <TextField fx:id="clientAddress1" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Address" />
+            <TextField fx:id="clientTitle1" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Client Title" />
+            <TextField fx:id="clientCompany1" alignment="CENTER" prefHeight="27.0" prefWidth="250.0" promptText="Client Company" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addWork" prefHeight="89.0" prefWidth="269.0" text="Add" textAlignment="CENTER" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="status" layoutX="43.0" layoutY="688.0" prefHeight="27.0" prefWidth="1237.0" textAlignment="CENTER" textFill="#198a05" wrapText="true">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding></Label>
+      <Text layoutX="7.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+   </children>
+</AnchorPane>
